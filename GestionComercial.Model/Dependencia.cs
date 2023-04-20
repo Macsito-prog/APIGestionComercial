@@ -12,8 +12,6 @@ using GestionComercial.DAL.Repositorios;
 using GestionComercial.DAL.Repositorios.Contrato;
 
 using GestionComercial.Utility;
-using GestionComercial.BLL.Servicios.Contrato;
-using GestionComercial.BLL.Servicios;
 
 namespace GestionComercial.IOC
 {
@@ -30,13 +28,6 @@ namespace GestionComercial.IOC
             services.AddScoped<IVentaRepository, VentaRepository>();
 
             services.AddAutoMapper(typeof(AutoMapperProfile));
-            services.AddScoped<IRolService, RolService>();
-            services.AddScoped<IUsuarioService, UsuarioService>();
-            services.AddScoped<ICategoriaService, CategoriaService>();
-            services.AddScoped<IProductoService, ProductoService>();
-            services.AddScoped<IVentaService, VentaService>();
-            services.AddScoped<IDashBoardService, DashBoardService>();
-            services.AddScoped<IMenuService, MenuService>();
 
         }
     }
