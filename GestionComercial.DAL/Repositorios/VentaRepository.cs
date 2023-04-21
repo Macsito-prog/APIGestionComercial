@@ -51,6 +51,7 @@ namespace GestionComercial.DAL.Repositorios
                     int cantDigitos = 4;
                     string ceros = string.Concat(Enumerable.Repeat("0", cantDigitos));
                     string numeroVenta = ceros + correlativo.UltimoNumero.ToString();
+
                     //formato 0001
 
                     numeroVenta = numeroVenta.Substring(numeroVenta.Length - cantDigitos, cantDigitos);
