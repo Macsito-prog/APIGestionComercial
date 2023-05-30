@@ -15,9 +15,9 @@ namespace GestionComercial.API.Controllers
     {
         private readonly IClienteServicio _clienteServicio;
 
-        public ClienteController(IClienteServicio clienenteServicio)
+        public ClienteController(IClienteServicio clienteServicio)
         {
-            _clienteServicio = clienenteServicio;
+            _clienteServicio = clienteServicio;
         }
         [HttpGet]
         [Route("Lista")]

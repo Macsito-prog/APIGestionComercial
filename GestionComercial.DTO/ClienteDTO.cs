@@ -12,7 +12,7 @@ namespace GestionComercial.DTO
 
         public string? NombreCliente { get; set; }
 
-        public DateTime? fechaRegistroCliente { get; set; }
+        public DateTime? FechaRegistroCliente { get; set; }
 
         public DateTime? FechaPagoCliente { get; set; }
 

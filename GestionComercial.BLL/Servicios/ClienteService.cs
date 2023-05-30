@@ -29,6 +29,8 @@ namespace GestionComercial.BLL.Servicios
         {
             try
             {
+
+
                 var clienteCreado = await _clienteRepositorio.Crear(_mapper.Map<Cliente>(modelo));
                 if (clienteCreado.IdCliente == 0)
                 {
@@ -91,7 +93,7 @@ namespace GestionComercial.BLL.Servicios
             try
             {
                 var queryCliente = await _clienteRepositorio.Consultar();
-                var listaClientes = queryCliente.Include(cat => cat.IdCliente).ToList();
+                var listaClientes = queryCliente.ToList();
                 return _mapper.Map<List<ClienteDTO>>(listaClientes.ToList());
             }
             catch
