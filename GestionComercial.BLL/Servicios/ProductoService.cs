@@ -8,7 +8,7 @@ using AutoMapper;
 using GestionComercial.BLL.Servicios.Contrato;
 using GestionComercial.DAL.Repositorios.Contrato;
 using GestionComercial.DTO;
-using GestionComercial.Model;
+using GestionComercial.Model; 
 using Microsoft.EntityFrameworkCore;
 
 namespace GestionComercial.BLL.Servicios
